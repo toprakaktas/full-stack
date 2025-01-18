@@ -15,6 +15,7 @@
 ------------------------------------*/
 html {
   box-sizing: border-box;
+  font-size: 62.5%; /* Set default font size to 10px */
 }
 *,
 *:before,
@@ -24,11 +25,29 @@ html {
 html,
 body {
   height: 100%;
-  margin: 0;
 }
-
 body {
   background-color: #f6f6f6;
+  margin: 0;
+  font-family: "Open Sans", serif;
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+h1,
+h2,
+h3 {
+  font-family: "M PLUS 1 Code", serif;
+  margin: 0;
+}
+h1 {
+  font-size: 7rem;
+  line-height: 1.3;
+}
+h2 {
+  font-size: 3.6rem;
+}
+h3 {
+  font-size: 2.4rem;
 }
 
 /* links */
@@ -48,6 +67,13 @@ footer a:hover {
   background: #647c90;
   color: #ede7dc;
   text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  display: inline-block;
+  padding: 7px;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  border-radius: 10px;
 }
 
 .content-wrapper {
@@ -90,7 +116,8 @@ footer a:hover {
 .download-link {
   position: fixed;
   top: 5px;
-  right: 5px;
+  left: 5px;
+  font-size: 1.3rem;
 }
 
 /* Profile
@@ -105,6 +132,7 @@ footer a:hover {
 .project-item img {
   width: 300px;
   float: left;
+  margin-right: 2rem;
 }
 
 /* Work Experience
@@ -113,10 +141,23 @@ footer a:hover {
   display: grid;
   grid-template-columns: 300px 1fr;
   column-gap: 25px;
+  margin: 3rem 0;
+}
+.work-details {
+  margin: 0;
+}
+.work-summary p:first-child {
+  margin-top: 3rem;
 }
 
 /* Education
 ------------------------------------*/
+.education-item {
+  margin: 3rem 0;
+}
+.education-item p {
+  margin: 0;
+}
 
 /* FOOTER
 ------------------------------------*/
